@@ -2,8 +2,8 @@ export interface Intro {
   name: string;
   about: string;
   href: string;
-  github: string;
-  linkedin: string;
+  github?: string;
+  linkedin?: string;
   email: string;
 }
 
@@ -24,172 +24,147 @@ export interface EducationItem extends ResumeItem {
 
 export interface ProjectItem extends ResumeItem {
   title: string;
-  href: string;
-  description: string[];
-}
-
-export interface OpenSourceItem extends ResumeItem {
-  title: string;
-  href: string;
+  href?: string;
   description: string[];
 }
 
 export const intro: Intro = {
-  name: "Bridger Tower",
+  name: "Joaquín Galasso",
   about:
-    "I'm a designer and developer specializing in creating intuitive, high-performance software and websites that merge visual excellence with practical functionality. I am passionate about human computer interaction, usability, and aesthetics in software and technology.",
-  href: "https://bridger.to",
-  github: "https://github.com/brijr",
-  linkedin: "https://linkedin.com/in/brijr",
-  email: "bridgertower@gmail.com",
+    "Soy un profesional creativo y proactivo con sólida formación en Diseño Multimedial y Tecnologías de la Información. Cuento con experiencia en docencia y en el desarrollo de soluciones digitales, combinando habilidades en programación, diseño gráfico y multimedia para transformar ideas en proyectos innovadores.",
+  href: "http://behance.net/joaquingalasso",
+  email: "mail@joaquingalasso.com",
+  github: "http://github.com/joaquingalasso",
+  linkedin: "https://www.linkedin.com/in/joaquingalasso/",
 };
 
 export const work: ResumeItem[] = [
   {
-    title: "Design Engineer at Ampry",
-    href: "https://ampry.com",
-    date: "2023 to Present",
-    location: "Pleasant Grove, UT",
+    title: "Diseñador Freelancer",
+    date: "Diciembre 2021 – Presente",
+    location: "Argentina",
     description: [
-      "Lead product engineering initiatives and design system architecture",
-      "Drive technical implementation of component libraries",
-      "Manage end-to-end product development workflows",
+      "Desarrollo de identidad visual, diseño gráfico y soluciones multimediales para clientes independientes.",
+      "Creación de branding, materiales promocionales y contenido digital adaptado a diferentes plataformas.",
     ],
   },
   {
-    title: "Design Engineer at 9d8",
-    href: "https://9d8.dev",
-    date: "2021 to Present",
-    location: "Remote",
+    title: "Técnico Informático · Aurelio Impresiones",
+    date: "Julio 2024 – Presente",
+    location: "Argentina",
     description: [
-      "Design and develop AI-powered solutions for marketing and sales teams",
-      "Create scalable systems that enhance client workflow efficiency",
-      "Implement cutting-edge AI technologies in user-friendly interfaces",
+      "Mantenimiento y optimización de sistemas informáticos.",
+      "Gestión de equipos y soporte técnico para la producción gráfica.",
+      "Implementación de soluciones digitales para mejorar el flujo de trabajo en entornos de impresión.",
     ],
   },
   {
-    title: "Creative Developer at Tackle",
-    href: "https://tackle.io",
-    date: "2022 to 2023",
-    location: "Remote",
+    title: "Diseñador Multimedia · Agencia Wolf",
+    date: "Marzo 2023 – Diciembre 2023",
+    location: "Argentina",
     description: [
-      "Led development of design systems and technical architecture",
-      "Improved site performance metrics while scaling development workflows",
-      "Implemented automated testing and deployment processes",
-    ],
-  },
-  {
-    title: "Founding Designer at Ampry",
-    href: "https://ampry.com",
-    date: "2020 to 2022",
-    location: "Pleasant Grove, UT",
-    description: [
-      "Built scalable design systems for CRO tech startup from ground up",
-      "Developed and implemented conversion optimization strategies",
-      "Assisted in significant conversion improvements across 200+ clients",
-    ],
-  },
-  {
-    title: "Designer at Zion",
-    href: "https://zion.surf",
-    date: "2018 to 2022",
-    location: "Lehi, UT",
-    description: [
-      "Collaborated with 100+ brands and marketing agencies",
-      "Created cohesive visual narratives across multiple platforms",
-      "Mediums include brand, web, social, product, and publication design",
+      "Desarrollo de contenido visual y multimedia para campañas digitales.",
+      "Diseño de interfaces, material publicitario y animaciones para redes sociales.",
+      "Garantizar una comunicación visual efectiva y alineada con la identidad de marca.",
     ],
   },
 ];
 
 export const education: EducationItem[] = [
   {
-    title: "BA Advertising at BYU",
-    date: "2018 to 2022",
-    location: "Provo, UT",
-    description: [
-      "Focus: Brand strategy and communication design",
-      "Developed expertise in account leadership and growth marketing",
-      "Led multiple award-winning campaign projects",
-    ],
+    title: "Licenciatura en Diseño Multimedial",
+    date: "Febrero 2023 – Diciembre 2026 (en curso)",
+    location: "Universidad Nacional de La Plata (UNLP), Facultad de Artes",
+    description: ["Formación en diseño, multimedia y tecnologías de la información."],
   },
   {
-    title: "UX Design Certificate at Google",
-    date: "2020 to 2021",
-    location: "Remote",
-    description: [
-      "Mastered user journey mapping and wireframing techniques",
-      "Completed 5 end-to-end product design projects",
-      "Applied UX principles to real-world client challenges",
-    ],
+    title: "Curso de Cocinero (Niveles I y II)",
+    date: "Febrero 2023 – Diciembre 2023",
+    location: "Escuela Universitaria de Oficios de la UNLP",
+    description: ["Formación profesional inicial en gastronomía."],
+  },
+  {
+    title: "Diploma de Escuela Superior, Orientación en Comunicación",
+    date: "Marzo 2016 – Diciembre 2021",
+    location: "Escuela Secundaria Euforión",
+    description: ["Promedio: 9,62."],
   },
 ];
 
 export const projects: ProjectItem[] = [
   {
-    title: "Outr.ai",
-    href: "https://outr.ai",
+    title: "Paper 'Multiplicidades'",
     description: [
-      "AI agents for scaling sales outreach",
-      "Role: Product Designer, AI Engineer, and Design Engineer",
-      "Built with Typescript and Next.js",
-    ],
-  },
-  {
-    title: "WaveFinder",
-    href: "https://wavefinder.io",
-    description: [
-      "Marketing message testing powered by AI",
-      "Role: Product Designer, AI Engineer, and Design Engineer",
-      "Built with Typescript and Next.js",
-    ],
-  },
-  {
-    title: "Swyftfin",
-    href: "https://swyftfin.com",
-    description: [
-      "Portable lending platform for home service providers",
-      "Role: Product Designer and Design Engineer",
-      "Built with Typescript and Next.js",
+      "Autores: Galasso, Esteban, Joray.",
+      "Referencia: Proyectual D Nº 3, e013, 2025.",
+      "Estado: En proceso de publicación.",
     ],
   },
 ];
 
-export const openSource: OpenSourceItem[] = [
+export const skills: ResumeItem[] = [
   {
-    title: "Router.so",
-    href: "https://router.so",
+    title: "Programación y Desarrollo",
     description: [
-      "Headless lead router and form backend",
-      "Role: Product Designer and Design Engineer",
-      "200+ Stars on Github, 800+ Users",
+      "Lenguajes: C#, Pascal, Java, JavaScript.",
+      "Paradigmas: Programación imperativa y orientada a objetos (OOP).",
+      "Tecnologías: Arduino, p5.js, Unity, HTML, CSS, Bootstrap, SASS, NPM, Git.",
     ],
   },
   {
-    title: "Components",
-    href: "https://components.bridger.to",
+    title: "Diseño y Multimedia",
     description: [
-      "Collection of components for building marketing websites",
-      "Next.js, Tailwind, React, Typescript, and shadcn/ui",
-      "260+ Stars on Github",
+      "Diseño gráfico y de interfaces: UX/UI, User Interface Design, Branding e identidad.",
+      "Herramientas: Adobe Illustrator, Adobe XD, Adobe Photoshop, Adobe InDesign, Adobe Premiere Pro, Figma.",
+      "Arte algorítmico y multimedia: Creación de arte generativo, edición de videos y proyectos de diseño interactivo.",
     ],
   },
   {
-    title: "Craft Design System",
-    href: "https://craft-ds.com",
+    title: "Competencias Complementarias",
     description: [
-      "Design system for building websites FAST!",
-      "Next.js, Tailwind, React, Typescript, and shadcn/ui",
-      "170+ Stars on Github",
+      "Comunicación; Presentaciones; Trabajo en equipo.",
+      "Resolución creativa de problemas; Habilidades analíticas.",
+      "Escritura y Uso de Metodologías Ágiles.",
     ],
   },
   {
-    title: "Next WP",
-    href: "https://wp.9d8.dev",
+    title: "Habilidades Gastronómicas",
     description: [
-      "Wordpress as a headless CMS using Next.js",
-      "Featured by Vercel as a template",
-      "620+ Stars on Github",
+      "Cocina (Niveles I y II); Demostraciones de comida.",
+      "Carnicería; Panadería; Pastelería.",
     ],
   },
 ];
+
+export const languages: ResumeItem[] = [
+  {
+    title: "Español",
+    description: [
+      "Dominio nativo.",
+    ],
+  },
+  {
+    title: "Inglés",
+    description: [
+      "Competencia laboral profesional.",
+      "EF SET (C2 Proficient).",
+    ],
+  },
+];
+
+export const contact: ResumeItem = {
+  title: "Contacto",
+  description: [
+    `<a href="https://wa.me/542216714359" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
+      📞 +54 221 671-4359
+    </a>`,
+    `<a href="mailto:mail@joaquingalasso.com" class="text-blue-500 hover:underline">
+      📧 mail@joaquingalasso.com
+    </a>`,
+    "La Plata, Buenos Aires 🇦🇷",
+  ],
+};
+
+
+
+

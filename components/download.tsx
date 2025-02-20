@@ -48,7 +48,7 @@ export function DownloadPDF({
       className="link"
       aria-label={`Download ${fileName}`}
     >
-      Download
+      CVN
     </button>
   );
 }

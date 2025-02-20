@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `Resume of ${intro.name}`,
+  title: `${intro.name}`,
   description: intro.about,
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} sm:p-12 antialiased`}
       >
